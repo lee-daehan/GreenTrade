@@ -23,7 +23,7 @@
                 <td>2</td>
                 <td>3</td>
                 <td>4</td>
-                <td><button class="btn btn-success">수정</button></td>
+                <td><button class="btn btn-success fix_button">수정</button></td>
               </tr>
               <tr>
                 <td>1</td>
@@ -72,6 +72,12 @@
         $('#manager_Home').click(function(e) {
             e.preventDefault(); // 링크 클릭 동작 취소
             window.location.href = 'manager_main.jsp'; // 페이지 이동
+        });
+    });
+    $(document).ready(function() {
+        $('.fix_button').click(function(e) {
+            e.preventDefault(); // 링크 클릭 동작 취소
+            loadPage('manager_memberInfo.jsp','main-content'); // 페이지 이동
         });
     });
 </script>
