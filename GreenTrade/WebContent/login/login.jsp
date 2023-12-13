@@ -148,8 +148,17 @@
 	height:101px;
 }
 
+.select{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	width: 500px;
+}
 
-
+.select a{
+	color: gray;
+}
 </style>
 <body>
 	<header>
@@ -211,7 +220,7 @@
 		<div class="anotherlog_box">
 			<div class="kakao_box">
 				<div>
-					<img style="width:100px; height:100px; border-right:1px solid black;" src="./imgfolder/kakaologo.png">
+					<img style="width:100px; height:100px; border-right:1px solid black;" src="../imgfolder/kakaologo.png">
 				</div>
 				<div>
 					<a class="nav-link text-black" href="#">카카오 로그인</a>
@@ -220,11 +229,22 @@
 			<div class="naver_box">
 				<div>
 					<img style="width:100px; height=100px; border-left:1px solid black; border-right:1px solid black;" 
-					src="./imgfolder/naverlogo.png">
+					src="../imgfolder/naverlogo.png">
 				</div>
 				<div>
 					<a class="nav-link text-black" href="#">네이버 로그인</a>
 				</div>
+			</div>
+		</div>
+		<div class="select">
+			<div>
+				<a href="#">아이디 찾기</a>
+			</div>
+			<div>
+				<a href="#">비밀번호 찾기</a>
+			</div>
+			<div>
+				<a href="#">회원가입</a>
 			</div>
 		</div>
 	</section>
