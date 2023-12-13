@@ -1,28 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자주 묻는 질문</title>
-    <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../style.css" rel="stylesheet">
-</head>
-<style>
-  hr {
-    width: 80%;
-    margin: 0 auto;
-  }
-</style>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="../script.js"></script>
-<body class="bg-light">
-    <div class="container-fluid">
-        <header>
-            헤더입니다
-        </header>
+<%@ include file="../header.jsp"%>
         <main class="container mt-4" id="main">
             <div class="row">
                 <section class="col-md-12" >
@@ -32,7 +10,7 @@
                                 <div class="bg-secondary rounded-circle h-12 w-12"></div>
                                 <span class=" text-center flex-fill" style="font-size: 24px;">자주 묻는 질문</span>
                             </div>
-                            <hr>
+                            <hr style="width:80%;">
                             <div class="border rounded d-flex align-items-center mt-4" style="width:80%">
 	                    		<div class="bg-secondary rounded-circle h-12 w-12"></div>
 	                            <span class=" text-center flex-fill" style="font-size: 24px; background-color:#D5F4DF">FAQ 제목</span>
@@ -40,7 +18,7 @@
                        		<div class="border rounded mb-2"style="min-height: 400px; width:80%;">
                         		자주 묻는 질문 내용
                     		</div>
-                    		<div class="float-right">
+                    		<div>
 		                    <button type="submit" class="btn btn-success back_FAQ_list">
 		                        	목록으로
 		                    </button>
@@ -50,12 +28,7 @@
                 </section>
             </div>
         </main>
-
-        <footer>
-            푸터입니다
-        </footer>
-    </div> 
-</body>
+<%@ include file="../footer.jsp"%>
 <script>
     $(document).ready(function() {
         $('.back_FAQ_list').click(function(e) {
@@ -64,4 +37,3 @@
         });
     });
 </script>
-</html>
