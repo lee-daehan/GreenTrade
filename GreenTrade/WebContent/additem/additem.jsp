@@ -8,7 +8,7 @@
 			<input type="file" id="imageInput" style="display: none;"
 				onchange="previewImage(event)"> <label for="imageInput">
 				<img class="add_image" alt="add item image"
-				src="../image/camera.png" id="previewImage">
+				src="../imgfolder/camera.png" id="previewImage">
 			</label>
 		</div>
 		<div class="added_images" id="addedImagesContainer">
@@ -40,7 +40,7 @@
 				<td class="add_td">거래방법</td>
 			</tr>
 			<tr>
-				<td class="add_td"><img src="../image/checkbox.png">택배거래
+				<td class="add_td"><img src="../imgfolder/checkbox.png">택배거래
 					<img src="../image/checkbox.png">직거래</td>
 			</tr>
 			<tr>
@@ -48,7 +48,7 @@
 			</tr>
 			<tr>
 				<td class="add_td"><input class="additem_input_location"
-					type="text"> <img src="../image/search.png"></td>
+					type="text"> <img src="../imgfolder/search.png"></td>
 			</tr>
 			<tr>
 				<td class="add_td"><button class="add_submit" type="submit">등록</button></td>
