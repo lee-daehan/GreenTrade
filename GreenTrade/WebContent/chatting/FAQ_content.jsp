@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp"%>
-        <main class="container mt-4" id="main">
+        <main class="container-fluid mt-4" id="main">
             <div class="row">
                 <section class="col-md-12" >
                     <div align="center" class="border p-4 rounded bg-white" style="min-height: 600px;">
