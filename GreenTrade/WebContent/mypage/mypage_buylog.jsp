@@ -21,36 +21,42 @@
 								style="text-align: center">
 								<thead>
 									<tr>
-										<th>번호</th>
+										<th>상태</th>
 										<th>상품명</th>
 										<th>가격</th>
 										<th>거래일</th>
 										<th>결제방식</th>
-										<th>거래상태</th>
 										<th>배송방식</th>
 										<th>거래확인</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>1</td>
+										<td>거래중</td>
 										<td>딸기</td>
 										<td>20000</td>
 										<td>2023-12-04</td>
 										<td>결제</td>
-										<td>구매</td>
 										<td>직거래</td>
 										<td>거래완료하기</td>
 									</tr>
 									<tr>
-										<td>2</td>
+										<td>거래중</td>
 										<td>딸기</td>
 										<td>20000</td>
 										<td>2023-12-04</td>
 										<td>나눔</td>
-										<td>구매</td>
 										<td>택배거래</td>
 										<td>거래완료하기</td>
+									</tr>
+									<tr>
+										<td>거래완료</td>
+										<td>딸기</td>
+										<td>20000</td>
+										<td>2023-12-04</td>
+										<td>나눔</td>
+										<td>택배거래</td>
+										<td>거래완료</td>
 									</tr>
 								</tbody>
 							</table>

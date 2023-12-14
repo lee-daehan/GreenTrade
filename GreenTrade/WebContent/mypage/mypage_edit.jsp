@@ -27,7 +27,7 @@
 								style="width: 200px; height: 200px" />
 							<div class="col-md-6">
 								<h2>사용자</h2>
-								<button type="button" class="btn btn-secondary btn-rounded mt-3"
+								<button type="button" class="btn btn-success btn-secondary btn-rounded mt-3"
 									data-mdb-ripple-init>프로필 이미지 수정</button>
 							</div>
 							<hr class="mt-3">
@@ -93,12 +93,12 @@
 							<div class="row d-flex align-items-center mt-3"
 								style="text-align: center;" style="width:200px;">
 								<div class="col-md-6">
-									<button type="submit" class="btn btn-secondary btn-rounded mt-3"
+									<button type="submit" class="btn btn-success btn-secondary btn-rounded mt-3"
 									data-mdb-ripple-init style="width: 200px;">확인</button>
 								</div>
 								<div class="form-outline col-md-6" data-mdb-input-init
 									style="width: 450px;">
-									<button type="button" class="btn btn-secondary btn-rounded mt-3"
+									<button type="button" class="btn btn-success btn-secondary btn-rounded mt-3"
 									data-mdb-ripple-init style="width: 200px;">취소</button>
 								</div>
 							</div>
