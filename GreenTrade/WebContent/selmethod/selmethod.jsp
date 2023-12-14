@@ -31,7 +31,7 @@
 </style>
 </head>
 <body>
-	<main style="height:500px;">
+	<main style="width:960px; height:500px; margin:10px auto;">
 		<h3 style="padding:20px;">원하시는 거래 방법을 선택해주세요.</h3>
 		
 		<div style="display:grid; grid-tamplate-rows:1fr 1fr; grid-gap:50px; padding:20px;">
