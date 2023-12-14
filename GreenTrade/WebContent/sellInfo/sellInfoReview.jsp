@@ -31,8 +31,8 @@
 </style>
 </head>
 <body>
-	<main>
-		<div style="width:80%; display:grid; grid-template-columns:1fr 1fr; border:1px solid; padding:20px; margin:40px auto;">
+	<main style="width:960px; margin:0 auto;">
+		<div style="display:grid; grid-template-columns:1fr 1fr; border:1px solid; padding:20px; margin:40px auto;">
 			<div style="display:grid; grid-template-rows:1fr 1fr;">
 				<div style="display:grid; grid-template-columns:1fr 1fr;">
 					<img style="width:80px; height:80px;">
@@ -58,7 +58,7 @@
 			</div>
 		</div>
 		
-		<div style="width:80%; border:1px solid; padding:20px; margin:40px auto;">
+		<div style="border:1px solid; padding:20px; margin:40px auto;">
 			<p>거래 후기</p>
 			<div style="display:grid; grid-template-rows:1fr 1fr 1fr 1fr; grid-gap:20px;">
 				<div>친절/매너가 좋아요</div>

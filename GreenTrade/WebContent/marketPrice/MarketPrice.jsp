@@ -32,15 +32,15 @@
 </head>
 <body>
 	<main>
-		<div style="display:flex; justify-content:center; margin-top:40px;">
-			<h2>시세조회</h2>
+		<div style="margin:40px auto; width:960px;">
+			<h2 style="text-align:center;">시세조회</h2>
 		</div>
 		
-		<div style="display:flex; justify-content:center; margin-top:40px;">
+		<div style="width:960px; margin:40px auto; display:flex; align-items:center; justify-content:center;">
 			<input type="search" style="width:600px; height:30px; padding:20px;">
 		</div>
 		
-		<div style="width:50%; height:450px; margin:40px auto; border:1px solid;">
+		<div style="width:960px; height:450px; margin:40px auto; border:1px solid;">
 			<div style="margin:20px;"><p>시세금액</p></div>
 			
 			<div style="display:flex; align-items:flex-end; height:80%; justify-content:space-between; margin:30px;">
