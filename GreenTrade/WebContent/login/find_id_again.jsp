@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,26 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
+* {
+	margin: 0;
+	padding: 0;
+}
 
+.container {
+	margin: 0;
+}
+
+.bg-green {
+	background-color: #BFF6B6;
+}
+
+.text-black {
+	color: black;
+}
+
+.bg-black {
+	background-color: black;
+}
 
 .logo {
 	position: absolute;
@@ -37,9 +56,9 @@
 	padding-top: 10px;
 }
 
-.join_text {
+.findId_text {
 	margin: 30px auto 30px auto;
-	width: 120px;
+	width: 250px;
 	height: 36px;
 	left: 680px;
 	top: 360px;
@@ -55,108 +74,107 @@
 .container-body {
 	margin: 30px auto 30px auto;
 	border: 1px solid black;
+	border-radius: height: 500px;
 	box-sizing: border-box;
 	position: relative;
 	width: 960px;
-	height:	930px;
+	height: 450px;
 	background: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	border-radius: 8px;
 }
 
 .form_box {
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
 	margin: 25px;
 	border: 1px solid black;
 	border-radius: 10px;
-	height: 760px;
+	height: 400px;
 	border: 1px solid black;
 }
 
-.regist_button {
+.form_box button {
+	margin: 0 20px;
 	width: 147px;
 	height: 72px;
-	float : right;
+	left: 648px;
+	top: 342px;
 	background: #BFF6B6;
 	border-radius: 20px;
-	justify-content: center; 
-	align-items: center;
-	margin-bottom: 20px;
+	float: right;
 }
 
 .form-group {
-	margin-bottom: 85px;
+	margin: 50px auto;
 	pdding: 0px;
 }
 
 .form-group input {
 	margin: 0 auto;
-	width: 400px;
+	width: 600px;
 	height: 80px;
 }
 
-.profile_photo{
-	margin: 10px auto;
-	justify-content: center;
-	align-items: center;
-	width: 100px;
-	height: 100px;
-	
+.anotherlog_box {
+	margin: 0 auto 40px auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	place-items: center;
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 804px;
+	height: 103px;
 }
-.profile_photo img{
-	width: 100px;
-	height: 100px;
+
+.naver_box {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	place-items: center;
+	background-color: #25C52C;
+	border-radius: 0px 8px 8px 0px;
+	width: 399px;
+	height: 101px;
+}
+
+.kakao_box {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	place-items: center;
+	background-color: #F6F61D;
+	border-radius: 8px 0px 0px 8px;
+	width: 402px;
+	height: 101px;
+}
+
+.select {
 	margin: 0 auto;
-	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	width: 500px;
 }
-.potho_button {
-	width: 147px;
-	height: 40px;
-	align-items: center;
-	justify-content: center;
+
+.select a {
+	color: gray;
 }
 </style>
 <body>
-
-	<div class="join_text">회원가입</div>
+	<div class="findId_text">아이디 찾기</div>
 	<hr style="width: 90%; background: black; margin: 0 auto;">
 	<section class="body">
 		<div class="container-body">
 			<form action="./" method="POST" class="form_box">
-
-				<div style="display: grid; grid-template-rows: 1fr 0.3fr;">
-					<div class="profile_photo">
-						<img src="../imgfolder/profile.png">
-					</div>
-
-					<div style="display:flex; justify-content:center; align-items: center;">
-				 		<button type="submit" class="photo_button" href="#">
-								프로필 사진 등록
-						</button>
-					</div>
-				</div>
-				
-			
-				<hr>
 				<div class="form-group">
-					<label for="id"></label>
-					 <input type="text" class="form-control"name="id" placeholder="아이디">
-					 <label for="Password"></label>
-					<input type="password" class="form-control" name="pw" placeholder="비밀번호">
-					<label for="Email"></label>
-					<input type="text" class="form-control" name="email" placeholder="이메일">
-					<label for="PhoneNum"></label>
-					<input type="text" class="form-control" name="phonenum" placeholder="전화번호">
-					<label for="Address"></label>
-					<input type="text" class="form-control" name="addresss" placeholder="주소">
+					<label for="Email"></label> <input type="text" class="form-control"
+						name="email" placeholder="이메일"> <label for="Code"></label>
+					<input type="password" class="form-control" name="code"
+						placeholder="수신코드">
 				</div>
-
 				<div>
-					<button type="submit" class="regist_button" href="#">회원가입</button>
+					<button type="button" onclick="">다시 찾기</button>
 				</div>
 			</form>
 		</div>
+
 
 	</section>
 
