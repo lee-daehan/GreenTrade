@@ -9,8 +9,29 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 	rel="stylesheet">
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.portone.io/v2/browser-sdk.js"></script>
+<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+<script>
+ function KGpay(){
+	IMP.init("imp31327821");
+	IMP.request_pay({
+	    pg : 'html5_inicis',
+	    pay_method : 'card',
+	    merchant_uid: "order_no_0001", // 상점에서 관리하는 주문 번호를 전달
+	    name : '주문명:결제테스트',
+	    amount : 13000,
+	    buyer_email : 'iamport@siot.do',
+	    buyer_name : '구매자이름',
+	    buyer_tel : '010-1234-5678',
+	    buyer_addr : '서울특별시 강남구 삼성동',
+	    buyer_postcode : '123-456',
+	    //m_redirect_url : '{모바일에서 결제 완료 후 리디렉션 될 URL}' // 예: https://www.my-service.com/payments/complete/mobile
+	}, function(rsp) { // callback 로직
+		//* ...중략 (README 파일에서 상세 샘플코드를 확인하세요)... *//
+	});
+}
+</script>
 </head>
 <style>
 .container {
@@ -53,8 +74,8 @@
 				
 				<div style="display:grid; grid-template-columns: 1fr 1fr; grid-gap:10px;">
 					<button style="height:40px;">네이버페이</button>
-					<button style="height:40px;">카카오페이</button>
-					<button style="height:40px;">카드결제</button>
+					<button style="height:40px;" type="button" onclick="Kakaopay()">카카오페이</button>
+					<button type="button" onclick="KGpay()" style="height:40px;">카드결제</button>
 					<button style="height:40px;">무통장입금</button>
 				</div>
 			</div>
@@ -75,8 +96,8 @@
 			</div>
 		</div>
 		
-		<div style="padding:20px;">
-			<button style="width:100%; padding:30px;">13,000원 결제</button>
+ 		<div style="padding:20px;">
+			<button style="width:100%; padding:30px;" type="button" onclick="KGpay()">13,000원 결제</button>
 		</div>
 	</main>
 <%@ include file="../footer.jsp"%>
