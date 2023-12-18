@@ -24,7 +24,7 @@
                                     </a>
                                 </div>
                                 <div class="col">
-                                    <a href="../chatting/FAQ_list.jsp" class="p-4 border rounded text-center bg-light d-block text-decoration-none">
+                                    <a href="<%= request.getContextPath() %>/faqList.do" class="p-4 border rounded text-center bg-light d-block text-decoration-none">
                                         	FAQ
                                     </a>
                                 </div>
@@ -39,7 +39,7 @@
                                 <li class="nav-item mb-2"><a href="#" class="nav-link text-success border rounded p-2" id="manager_memberListMenu">회원정보 관리</a></li>
                                 <li class="nav-item mb-2"><a href="#" class="nav-link text-success border rounded p-2" id="manager_reportListMenu">신고 내역</a></li>
                                 <li class="nav-item mb-2"><a href="#" class="nav-link text-success border rounded p-2" id="manager_editMenu" >정보 수정</a></li>
-                                <li class="nav-item mb-2"><a href="../chatting/FAQ_list.jsp" class="nav-link text-success border rounded p-2" >FAQ</a></li>
+                                <li class="nav-item mb-2"><a href="<%= request.getContextPath() %>/faqList.do" class="nav-link text-success border rounded p-2" >FAQ</a></li>
                                 <li class="nav-item mb-2"><a href="#" class="nav-link text-success border rounded p-2" id="manager_productMenu">상품 관리</a></li>
                             </ul>
                         </nav>
