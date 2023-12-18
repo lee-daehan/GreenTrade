@@ -20,45 +20,41 @@
 				<hr class="mt-3">
 	
 				<div class="row d-flex align-items-center mt-3"
-					style="text-align: center;" style="width:200px;">
+					style="text-align: center;" >
 					<div class="col-md-6">
 						<h5>아이디</h5>
 					</div>
-					<div class="form-outline col-md-6" data-mdb-input-init
-						style="width: 450px;">
+					<div class="form-outline col-md-6" >
 						<input type="text" id="form12" class="form-control"
 												placeholder="아이디" />
 					</div>
 				</div>
 				<div class="row d-flex align-items-center mt-3"
-					style="text-align: center;" style="width:200px;">
+					style="text-align: center;" >
 					<div class="col-md-6">
 						<h5>비밀번호</h5>
 					</div>
-					<div class="form-outline col-md-6" data-mdb-input-init
-						style="width: 450px;">
+					<div class="form-outline col-md-6" >
 						<input type="text" id="form12" class="form-control"
 							placeholder="비밀번호" />
 					</div>
 				</div>
 				<div class="row d-flex align-items-center mt-3"
-					style="text-align: center;" style="width:200px;">
+					style="text-align: center;">
 					<div class="col-md-6">
 						<h5>이메일</h5>
 					</div>
-					<div class="form-outline col-md-6" data-mdb-input-init
-						style="width: 450px;">
+					<div class="form-outline col-md-6" >
 						<input type="text" id="form12" class="form-control"
 							placeholder="이메일" />
 					</div>
 				</div>
 				<div class="row d-flex align-items-center mt-3"
-					style="text-align: center;" style="width:200px;">
+					style="text-align: center;" >
 					<div class="col-md-6">
 						<h5>전화번호</h5>
 					</div>
-					<div class="form-outline col-md-6" data-mdb-input-init
-						style="width: 450px;">
+					<div class="form-outline col-md-6" >
 						<input type="text" id="form12" class="form-control"
 							placeholder="전화번호" />
 					</div>
@@ -66,27 +62,23 @@
 				</div>
 	
 				<div class="row d-flex align-items-center mt-3"
-					style="text-align: center;" style="width:200px;">
+					style="text-align: center;" >
 					<div class="col-md-6">
 						<h5>주소</h5>
 					</div>
-					<div class="form-outline col-md-6" data-mdb-input-init
-						style="width: 450px;">
+					<div class="form-outline col-md-6" >
 						<input type="text" id="form12" class="form-control"
 							placeholder="주소" />
 					</div>
 				</div>
 				<hr class="mt-3 mb-3">
 				<div class="row d-flex align-items-center mt-3"
-					style="text-align: center;" style="width:200px;">
+					style="text-align: center;">
 					<div class="col-md-6">
-					<button type="submit" class="btn btn-success btn-rounded mt-3"
-						data-mdb-ripple-init style="width: 200px;">확인</button>
+					<button type="submit" class="btn btn-success btn-rounded mt-3">확인</button>
 					</div>
-					<div class="form-outline col-md-6" data-mdb-input-init
-						style="width: 450px;">
-						<button type="button" class="btn btn-success btn-rounded mt-3" id="manager_Home"
-							data-mdb-ripple-init style="width: 200px;">취소</button>
+					<div class="form-outline col-md-6" data-mdb-input-init>
+						<button type="button" class="btn btn-success btn-rounded mt-3" id="manager_Home">취소</button>
 					</div>
 				</div>
 			</div>

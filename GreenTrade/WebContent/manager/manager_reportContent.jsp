@@ -9,18 +9,18 @@
                         <div class="p-2 rounded ">
                             <div class="border rounded d-flex align-items-center mb-4">
                                 <div class="bg-secondary rounded-circle h-12 w-12"></div>
-                                <span class=" text-center flex-fill" style="font-size: 24px; background-color:#D5F4DF">신고 제목</span>
+                                <span class=" text-center flex-fill" style="font-size: 24px; background-color:#D5F4DF">${reportContent.reporttitle }</span>
                             </div>
                             <div class="p-2 row">
-                                <div class="col-sm-4 text-center border rounded">신고 날짜 : ""</div>
+                                <div class="col-sm-4 text-center border rounded">신고 날짜 : ${reportContent.reportdate }</div>
                                 <div class="col-sm "></div>
                                 <div class="col-sm "></div>
-                                <div class="col-sm-4 text-center border rounded">신고 대상 : ""</div>
+                                <div class="col-sm-4 text-center border rounded">신고 대상 : ${reportContent.targetid }</div>
                             </div>
                         </div>                
                     </div>
                     <div class="border rounded" style="min-height: 400px; min-width: 600px;">
-                        	신고 내용
+                        	${reportContent.reportcontent}
                     </div>
                     <div class="float-end mt-4">
                         <button type="submit" class="btn btn-success">
